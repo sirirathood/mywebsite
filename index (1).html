@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+<!-- add nav bar---->
+<ul class="nav">
+  <li><a class="active" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<!-- end nav bar-->
+
+<!-- start slider-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/indeximg1.jpg" style="width:100%">
+  <div class="text">xyz</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/indeximg2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/indeximg3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/indeximg4.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<!-- end slider-->
+
+
+<!--start body part-->
+
+ <div class="grid-container">
+  <div class="grid-item"><img src="images/indeximg1.jpg" alt="Italian Trulli"></div>
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>  
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>  
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>  
+  <div class="grid-item"><img src="images/lovestorybook1.jpg" alt="Italian Trulli"></div>  
+</div>
+
+
+
+<!-- End body part-->
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+
+<footer>
+  <p>Author: Hexa Refrence<br>
+  <a href="mailto:mounikadolly@example.com">xyz</a></p>
+</footer>
+</html>
